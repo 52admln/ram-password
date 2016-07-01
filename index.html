@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>随机密码生成器</title>
+<link href="css/common_style.css" rel="stylesheet" type="text/css" />
+<link href="css/Model_style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script src="./js/script.js" type="text/javascript"></script>
+</head>
+
+<!-- --------------------------------------------------------------------
+	模板需更改部分 1.title; 2.文件夹名及本文件名（改成规定名称）; 
+    3.css文件夹中的Model_style.css文件名
+	其余所有内容请勿改动！
+--------------------------------------------------------------------- -->
+
+<body>
+<div id="top" class="shadow">
+	<div id="logo">Confusay Lab</div>
+    <div id="user_inf"><?php echo @$_COOKIE["department"],' | ', @$_COOKIE["username"];?></div>
+</div>
+
+<div id="content" class="shadow">
+<!-- 此处添加内容 -->
+	<div class="container">
+		<div class="pw_l fl">
+			<input type="checkbox" id="num" checked="checked"/><label>0-9</label>
+			<input type="checkbox" id="upA" checked="checked" /><label>A-Z</label>
+			<input type="checkbox" id="lowA" checked="checked" /><label>a-z</label>
+			<input type="checkbox" id="special" /><label>特殊符号</label>
+			</br>
+			<label class="lab_len">输入生成密码长度：</label><input type="text" id="ipt_len" value="10" />
+			<div class="pw_result"><span id="txt_opt" ></span></div>
+		</div>
+		<div class="pw_r fl">
+			<button value="OK" id="confirm" class="pw_btn">生成</button>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="copyright">All rights reserved by ConfusayLab.</div>
+</body>
+</html>

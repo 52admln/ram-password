@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------- 本区域样式请勿更改 --------------- */
+body {
+	background: #191b2a;
+}
+#top {
+	background: #262837;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+}
+#logo {
+	width: 280px;
+	height: 80px;
+	color: #bfbfbf;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 80px;
+	text-align: center;
+	float: left
+}
+#user_inf {
+	width: 180px;
+	height: 80px;
+	color: #bfbfbf;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	float: right;
+	line-height: 80px;
+}
+#copyright {
+	width: 100%;
+	height: 30px;
+	color: #bfbfbf;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: Tahoma, Geneva, sans-serif;
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+}
+.shadow {
+	box-shadow: 0px 15px 10px -15px #000;
+	-moz-box-shadow: 0px 15px 10px -15px #000;
+	-webkit-box-shadow: 0px 15px 10px -15px #000;
+}
+/* -------------- 本区域样式请勿更改 -------------- */
+
+#content {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	margin-left: -250px;
+	background: #262837;
+	color:#BFBFBF;
+}
+#content label {
+	padding: 0px 10px;
+}
+#content .lab_len {
+	padding: 0px;
+}
+input[type="checkbox"] {
+	padding: 0px 10px;
+}
+.container {
+	width: 500px;
+	line-height: 30px;
+	padding:50px;
+	overflow: hidden;
+}
+.pw_r {
+	padding-left: 30px;
+}
+.pw_btn {
+	width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,.5);
+    text-align: center;
+    /*color: #bfbfbf;*/
+    cursor: pointer;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: #BFBFBF;
+    border: 0px;
+    background:#BFBFBF; 
+    transition: background 600ms ease 0s;
+}
+.pw_btn:hover { background:#e03902;}

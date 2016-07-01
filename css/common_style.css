@@ -1,0 +1,374 @@
+@charset "utf-8";
+/* CSS Ziyue CommonStyle */
+
+html, body, div, span, input, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+}
+input, button, textarea, select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	outline: medium none
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html * {
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	color: #555;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, Microsoft YaHei;
+	-webkit-text-size-adjust: 100%;
+}
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+input, select {
+	font-size: 12px;
+	vertical-align: middle;
+}
+ul, li, dl, ol {
+	list-style-type: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+td, th, caption {
+	font-size: 14px;
+}
+/*标题初始化*/
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+/*通用容器*/
+.wrapper {
+	clear: both;
+	overflow: hidden;
+}
+button {
+	cursor: pointer;
+}
+a, a:link {
+	color: #222;
+	text-decoration: none;
+}
+a:active, a:hover {
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+} /*点击链接时出现的虚线框消失*/
+.more {
+	float: right;
+} /*页面中的“更多”*/
+.more a {
+	font-weight: normal;
+	font-size: 12px;
+}
+.fl {
+	display: inline;
+	float: left;
+}
+.fr {
+	display: inline;
+	float: right;
+}
+.clear {
+	display: block!important;
+	float: none!important;
+	clear: both;
+	overflow: hidden;
+	width: auto!important;
+	height: 0!important;
+	margin: 0 auto!important;
+	padding: 0!important;
+	font-size: 0;
+	line-height: 0;
+} /*浮动清除*/
+.pointer {
+	cursor: pointer;
+} /*鼠标样式 */
+.NoBorder {
+	border: 0 none;
+} /*取消边框 */
+/*文本对齐方式  */
+.tl {
+	text-align: left;
+}
+.tc {
+	text-align: center;
+}
+.tr {
+	text-align: right;
+}
+/*定义文本下划线*/
+.UnLine {
+	text-decoration: underline;
+}
+.DisUnLine {
+	text-decoration: none;
+}
+/*定位关系*/
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+/*超出隐藏*/
+.o-hidden {
+	overflow: hidden;
+}
+/*隐藏元素，visibility可以隐藏元素，但是还是会在布局中占位*/
+.invisible {
+	visibility: hidden;
+}
+/*从页面布局上隐藏元素*/
+.hidden {
+	display: none;
+}
+.block {
+	display: block;
+}
+/*常用样式定义*/
+/*边框定义*/
+.BTW {
+	border-top-width: 1px;
+}
+.BRW {
+	border-right-width: 1px;
+}
+.BLW {
+	border-left-width: 1px;
+}
+.BBW {
+	border: 0px;
+	border-bottom-width: 1px;
+}
+.Bord1 {
+	border: 1px solid #999;
+}
+.Bord2 {
+	border: 2px solid #999;
+}
+/*边框宽度*/
+.BW1 {
+	border-width: 1px;
+}
+.BW2 {
+	border-width: 2px;
+}
+.BW3 {
+	border-width: 3px;
+}
+.BW4 {
+	border-width: 4px;
+}
+.BW5 {
+	border-width: 5px;
+}
+/*边框样式*/
+.BsS {
+	border-style: solid;
+}
+.BsD {
+	border-style: dotted;
+}
+/*边框颜色*/
+.BcBlue {
+	border-color: #0000FF;
+}
+.BcBlack {
+	border-color: #000;
+}
+/*宽度定义*/
+.W1024, .W786, .W975, .W972 {
+	width: 968px;
+	margin: 0 auto;
+}
+.W1024 {
+	width: 1024px;
+}
+.W786 {
+	width: 786px;
+}
+.W975 {
+	width: 975px;
+}
+.W972 {
+	width: 972px;
+}
+/*颜色功能定义*/
+.cRed {
+	color: #F00;
+}
+.cWhite {
+	color: #FFF;
+}
+.cGreen {
+	color: #0F0;
+}
+.cGray {
+	color: #666;
+}
+.cBlue {
+	color: #00F;
+}
+.cblack {
+	color: #000;
+}
+/*字体样式*/
+.FB {
+	font-weight: bold;
+}
+.FN {
+	font-weight: normal;
+}
+.FI {
+	font-style: italic;
+}
+/*字体大小*/
+.F10 {
+	font-size: 10px;
+}
+.F11 {
+	font-size: 11px;
+}
+.F12 {
+	font-size: 12px;
+}
+.F13 {
+	font-size: 13px;
+}
+.F14 {
+	font-size: 14px;
+}
+.F16 {
+	font-size: 16px;
+}
+.F18 {
+	font-size: 18px;
+}
+/*定义上下2个DIV间距*/
+.DivH5, .DivH10, .DivH15, .DivH20, .DivH25, .DivH30, DivH1, .DivH40 {
+	width: 100%;
+	overflow: hidden;
+}
+.DivH1 {
+	height: 1px;
+}
+.DivH5 {
+	height: 5px;
+}
+.DivH10 {
+	height: 10px;
+}
+.DivH15 {
+	height: 15px;
+}
+.DivH20 {
+	height: 20px;
+}
+.DivH25 {
+	height: 25px;
+}
+.DivH30 {
+	height: 30px;
+}
+.DivH40 {
+	height: 40px;
+}
+/*定义行高*/
+.LH1 {
+	line-height: 1px;
+}
+.LH10 {
+	line-height: 10px;
+}
+.LH15 {
+	line-height: 15px;
+}
+.LH18 {
+	line-height: 18px;
+}
+.LH20 {
+	line-height: 20px;
+}
+.LH25 {
+	line-height: 25px;
+}
+.LH30 {
+	line-height: 30px;
+}
+.LH35 {
+	line-height: 35px;
+}
+/*标题样式定义*/
+/*在定义p标签元素或其它元素时,需要同时定义行高和高度,一般在标题中使用*/
+.PTit25, .PTit20, .PTit18, .PTit30, .PTit, .PTit1, .PTit22 {
+	width: 100%;
+	overflow: hidden;
+}
+.PTit30 {
+	line-height: 30px;
+	height: 30px;
+}
+.PTit25 {
+	line-height: 25px;
+	height: 25px;
+}
+.PTit22 {
+	line-height: 22px;
+	height: 22px;
+}
+.PTit20 {
+	line-height: 20px;
+	height: 20px;
+}
+.PTit18 {
+	line-height: 18px;
+	height: 18px;
+}
+.PTit15 {
+	line-height: 15px;
+	height: 15px;
+}
+.PTit10 {
+	line-height: 10px;
+	height: 10px;
+}
+.PTit1 {
+	line-height: 1px;
+	height: 1px;
+}
+.tInd{ text-indent:2em}
+.trans {
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+}
